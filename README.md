@@ -193,7 +193,6 @@ potfolio/
 ├── server.js                # Express application
 ├── package.json             # Dependencies
 ├── vercel.json              # Vercel configuration
-├── .env.example             # Environment variables template
 └── README.md                # This file
 ```
 
@@ -211,10 +210,6 @@ potfolio/
 - Safari (latest)
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
-
-## License
-
-MIT
 
 ## Author
 
