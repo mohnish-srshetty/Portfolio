@@ -211,10 +211,6 @@ potfolio/
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## License
-
-MIT
-
 ## Author
 
 Mohnish S Shetty
