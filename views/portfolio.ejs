@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Hub</title>
+  <title>Portfolio - <%= user.name %></title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -49,6 +49,7 @@
       </g>
     </svg>
   </div>
+  
   <div class="portfolio-avatar profile-avatar" style="position: absolute; top: 20px; right: 20px; cursor: pointer;">
     <span><%= user.firstLetter %></span>
     <div class="profile-dropdown">
@@ -56,44 +57,38 @@
       <button class="logout-btn">Logout</button>
     </div>
   </div>
-  <div class="portfolio-hub-header">
+
+  <div class="container portfolio-container">
     <h1>Portfolio Hub</h1>
-  </div>
-  <div class="portfolio-main">
-    <div class="portfolio-card portfolio-user">
-      <div class="portfolio-user-info">
-        <h1>Welcome to Portfolio of Mohnish S Shetty</h1>
-      </div>
-    </div>
-    <div class="portfolio-row" style="gap: 24px; flex-wrap: wrap;">
-      <div class="portfolio-card portfolio-about" style="min-width: 320px;">
-        <h2>About Me</h2>
-        <div class="portfolio-section-content">
-          <p><strong>Professional Overview:</strong> Computer Science Engineering student with a solid grasp of software development principles including coding, debugging, and version control. Skilled in writing clean, scalable code and understanding complete development life cycles. Gained hands-on experience with API integration, logic building, UI design, and problem-solving. Adaptable, detail-oriented, and eager to contribute to dynamic engineering teams.</p>
-          <p><strong>Contact:</strong> 7892016094 | mohnish.srshetty@gmail.com</p>
-          <p><strong>Links:</strong> <a href="https://github.com/mohnish-srshetty" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mohnish-s-shetty-38210025b/" target="_blank">LinkedIn</a> | <a href="https://devode.liveblog365.com" target="_blank">Portfolio Website</a></p>
-        </div>
-      </div>
-      <div class="portfolio-card portfolio-skills" style="min-width: 320px;">
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>Programming Languages:</strong> Python, Java, C++, C</li>
-          <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Flask</li>
-          <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-          <li><strong>Tools & Platforms:</strong> Google Colab, Gemini API, VS Code</li>
-          <li><strong>Soft Skills:</strong> Effective Communication, Research oriented, Team collaboration and co-ordination, Analytical Thinking, Quick learner and adaptable</li>
-        </ul>
-      </div>
-      <div class="portfolio-card portfolio-projects" style="min-width: 320px;">
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Library Management System:</strong> Built a full-stack web application with admin and student dashboards. Enabled real-time book tracking, penalty management, and user registration. (Python, Flask, MySQL, HTML, CSS, JavaScript)</li>
-          <li><strong>Attendance Management System:</strong> Developed a web-based interface for attendance and marks tracking. Integrated a calendar view and weekly timetable feature. (Python, MongoDB, MySQL, HTML/CSS)</li>
-          <li><strong>Portfolio Website:</strong> Designed a personal site to showcase projects and certifications. Implemented a dynamic UI with vibrant theming and responsive layout. (HTML, CSS, JavaScript)</li>
-          <li><strong>MedVision AI:</strong> Developed an end-to-end secured AI platform using FastAPI, React, PyTorch, JWT Authentication for multi-modal medical image analysis (X-ray, CT, MRI, Ultrasound). Implemented deep learning models and Generative AI (Llama 3.3) to generate structured diagnostic reports with clinical insights. (React, Python, CSS, JavaScript, API)</li>
-        </ul>
-      </div>
-    </div>
+    <p style="color: #555; margin-bottom: 24px;">Welcome, <%= user.name %>!</p>
+    
+    <section class="portfolio-section">
+      <h2>About Me</h2>
+      <p><strong>Professional Overview:</strong> Computer Science Engineering student with a solid grasp of software development principles including coding, debugging, and version control. Skilled in writing clean, scalable code and understanding complete development life cycles. Gained hands-on experience with API integration, logic building, UI design, and problem-solving. Adaptable, detail-oriented, and eager to contribute to dynamic engineering teams.</p>
+      <p><strong>Contact:</strong> 7892016094 | mohnish.srshetty@gmail.com</p>
+      <p><strong>Links:</strong> <a href="https://github.com/mohnish-srshetty" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mohnish-s-shetty-38210025b/" target="_blank">LinkedIn</a> | <a href="https://devode.liveblog365.com" target="_blank">Portfolio Website</a></p>
+    </section>
+
+    <section class="portfolio-section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, Java, C++, C</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Flask</li>
+        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+        <li><strong>Tools & Platforms:</strong> Google Colab, Gemini API, VS Code</li>
+        <li><strong>Soft Skills:</strong> Effective Communication, Research oriented, Team collaboration and co-ordination, Analytical Thinking, Quick learner and adaptable</li>
+      </ul>
+    </section>
+
+    <section class="portfolio-section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Library Management System:</strong> Built a full-stack web application with admin and student dashboards. Enabled real-time book tracking, penalty management, and user registration. (Python, Flask, MySQL, HTML, CSS, JavaScript)</li>
+        <li><strong>Attendance Management System:</strong> Developed a web-based interface for attendance and marks tracking. Integrated a calendar view and weekly timetable feature. (Python, MongoDB, MySQL, HTML/CSS)</li>
+        <li><strong>Portfolio Website:</strong> Designed a personal site to showcase projects and certifications. Implemented a dynamic UI with vibrant theming and responsive layout. (HTML, CSS, JavaScript)</li>
+        <li><strong>MedVision AI:</strong> Developed an end-to-end secured AI platform using FastAPI, React, PyTorch, JWT Authentication for multi-modal medical image analysis (X-ray, CT, MRI, Ultrasound). Implemented deep learning models and Generative AI (Llama 3.3) to generate structured diagnostic reports with clinical insights. (React, Python, CSS, JavaScript, API)</li>
+      </ul>
+    </section>
   </div>
   <script src="js/portfolio.js"></script>
 </body>

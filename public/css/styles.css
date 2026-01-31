@@ -143,6 +143,68 @@ html {
   color: #8B5CF6;
 }
 
+/* Portfolio Page - Centered Container Layout */
+.portfolio-container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.portfolio-container h1 {
+  margin-bottom: 8px;
+}
+
+.portfolio-section {
+  margin: 32px 0;
+  text-align: left;
+  background: rgba(249, 249, 251, 0.5);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.portfolio-section h2 {
+  font-size: 1.4rem;
+  color: #181f2a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.portfolio-section p {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.portfolio-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.portfolio-section li {
+  background: none;
+  margin: 0 0 12px 0;
+  padding: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.portfolio-section li strong {
+  color: #8B5CF6;
+}
+
+.portfolio-section a {
+  color: #8B5CF6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.portfolio-section a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .portfolio-row {
     flex-direction: column;
