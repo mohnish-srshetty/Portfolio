@@ -276,12 +276,15 @@ html {
   }
 
   .portfolio-avatar {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
+    z-index: 1000;
+    background: #181f2a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
   .portfolio-about h2,
