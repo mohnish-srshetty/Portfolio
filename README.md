@@ -193,7 +193,6 @@ potfolio/
 ├── server.js                # Express application
 ├── package.json             # Dependencies
 ├── vercel.json              # Vercel configuration
-├── .env.example             # Environment variables template
 └── README.md                # This file
 ```
 
