@@ -3,7 +3,7 @@ document.querySelector('.logout-btn').addEventListener('click', async () => {
   window.location.href = '/';
 });
 
-document.querySelector('.profile-letter').addEventListener('click', () => {
+document.querySelector('.portfolio-avatar').addEventListener('click', () => {
   const btn = document.querySelector('.logout-btn');
   btn.style.display = btn.style.display === 'block' ? 'none' : 'block';
 });
