@@ -51,7 +51,10 @@
   </div>
   <div class="portfolio-avatar profile-avatar" style="position: absolute; top: 20px; right: 20px; cursor: pointer;">
     <span><%= user.firstLetter %></span>
-    <button class="logout-btn">Logout</button>
+    <div class="profile-dropdown">
+      <div class="profile-dropdown-email"><%= user.email %></div>
+      <button class="logout-btn">Logout</button>
+    </div>
   </div>
   <div class="portfolio-hub-header">
     <h1>Portfolio Hub</h1>
@@ -59,8 +62,7 @@
   <div class="portfolio-main">
     <div class="portfolio-card portfolio-user">
       <div class="portfolio-user-info">
-        <div class="portfolio-user-name"><%= user.name %></div>
-        <div class="portfolio-user-email"><%= user.email %></div>
+        <h1>Welcome to Portfolio of Mohnish S Shetty</h1>
       </div>
     </div>
     <div class="portfolio-row" style="gap: 24px; flex-wrap: wrap;">

@@ -4,8 +4,8 @@ document.querySelector('.logout-btn').addEventListener('click', async () => {
 });
 
 document.querySelector('.portfolio-avatar').addEventListener('click', () => {
-  const btn = document.querySelector('.logout-btn');
-  btn.style.display = btn.style.display === 'block' ? 'none' : 'block';
+  const dropdown = document.querySelector('.profile-dropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 });
 
 // Scroll animations
