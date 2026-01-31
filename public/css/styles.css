@@ -8,7 +8,8 @@ html {
 }
 
 
-.portfolio-card, .portfolio-card * {
+.portfolio-card,
+.portfolio-card * {
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -20,8 +21,10 @@ html {
   background: transparent;
   text-align: center;
   margin-bottom: 32px;
-  margin-top: -250px;
+  margin-top: 100px;
+  padding: 0 16px;
 }
+
 .portfolio-hub-header h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -29,6 +32,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 .portfolio-main {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,15 +40,17 @@ html {
   flex-direction: column;
   gap: 24px;
 }
+
 .portfolio-row {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
+
 .portfolio-card {
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 2px 16px 0 rgba(24,31,42,0.07);
+  box-shadow: 0 2px 16px 0 rgba(24, 31, 42, 0.07);
   padding: 32px 28px;
   margin-bottom: 0;
   flex: 1 1 auto;
@@ -58,6 +64,7 @@ html {
   max-width: 100%;
   overflow-wrap: break-word;
 }
+
 .portfolio-user {
   flex-direction: row;
   align-items: center;
@@ -65,6 +72,7 @@ html {
   margin-bottom: 0;
   max-width: 100%;
 }
+
 .portfolio-avatar {
   width: 70px;
   height: 70px;
@@ -77,40 +85,52 @@ html {
   color: #fff;
   font-weight: bold;
 }
+
 .portfolio-user-info {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
+
 .portfolio-user-name {
   font-size: 1.5rem;
   font-weight: bold;
   color: #181f2a;
 }
+
 .portfolio-user-email {
   color: #555;
   font-size: 1rem;
 }
-.portfolio-about h2, .portfolio-skills h2, .portfolio-projects h2 {
+
+.portfolio-about h2,
+.portfolio-skills h2,
+.portfolio-projects h2 {
   font-size: 1.2rem;
   color: #181f2a;
   margin-bottom: 10px;
 }
+
 .portfolio-section-content p {
   margin: 0 0 8px 0;
   color: #222;
   font-size: 1rem;
 }
+
 .portfolio-skills-projects {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.portfolio-skills ul, .portfolio-projects ul {
+
+.portfolio-skills ul,
+.portfolio-projects ul {
   padding-left: 0;
   margin: 0;
 }
-.portfolio-skills li, .portfolio-projects li {
+
+.portfolio-skills li,
+.portfolio-projects li {
   background: none;
   margin: 0 0 8px 0;
   padding: 0;
@@ -118,14 +138,16 @@ html {
   color: #333;
   font-size: 1rem;
 }
+
 .portfolio-projects li strong {
   color: #8B5CF6;
 }
+
 @media (max-width: 900px) {
   .portfolio-row {
     flex-direction: column;
   }
-  
+
   .portfolio-card {
     min-width: 0;
     width: 100%;
@@ -139,21 +161,22 @@ html {
     overflow-x: hidden;
     width: 100%;
   }
-  
+
   .light-lines {
-    display: none; /* Hide decorative SVG on mobile to prevent overflow */
+    display: none;
+    /* Hide decorative SVG on mobile to prevent overflow */
   }
-  
+
   .portfolio-hub-header {
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 24px;
     padding: 0 16px;
   }
-  
+
   .portfolio-hub-header h1 {
     font-size: 1.8rem;
   }
-  
+
   .portfolio-main {
     padding: 0 16px;
     margin: 0 auto;
@@ -161,7 +184,7 @@ html {
     max-width: 100%;
     box-sizing: border-box;
   }
-  
+
   .portfolio-card {
     min-width: 0;
     width: 100%;
@@ -169,18 +192,18 @@ html {
     margin-bottom: 16px;
     box-sizing: border-box;
   }
-  
+
   .portfolio-user {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  
+
   .portfolio-user-info h1 {
     font-size: 1.3rem;
     word-wrap: break-word;
   }
-  
+
   .portfolio-avatar {
     position: absolute;
     top: 20px;
@@ -189,13 +212,13 @@ html {
     height: 50px;
     font-size: 1.5rem;
   }
-  
+
   .portfolio-about h2,
   .portfolio-skills h2,
   .portfolio-projects h2 {
     font-size: 1.1rem;
   }
-  
+
   .portfolio-section-content p,
   .portfolio-skills li,
   .portfolio-projects li {
@@ -203,18 +226,18 @@ html {
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
-  
+
   .container {
     margin: 20px 10px;
     padding: 20px 16px;
     max-width: 100%;
     box-sizing: border-box;
   }
-  
+
   .container h1 {
     font-size: 1.6rem;
   }
-  
+
   input {
     width: 100%;
     max-width: 100%;
@@ -227,15 +250,15 @@ html {
   .portfolio-hub-header h1 {
     font-size: 1.5rem;
   }
-  
+
   .portfolio-user-info h1 {
     font-size: 1.1rem;
   }
-  
+
   .portfolio-card {
     padding: 16px 12px;
   }
-  
+
   .container {
     margin: 10px 5px;
     padding: 16px 12px;
@@ -249,22 +272,26 @@ html {
   padding: 32px 24px;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 2px 16px 0 rgba(24,31,42,0.07);
+  box-shadow: 0 2px 16px 0 rgba(24, 31, 42, 0.07);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .container h1 {
   font-size: 2.2rem;
   font-weight: bold;
   color: #181f2a;
   margin-bottom: 8px;
 }
-.container > p {
+
+.container>p {
   color: #555;
   margin-bottom: 24px;
 }
-#login-form, #register-form {
+
+#login-form,
+#register-form {
   width: 100%;
   background: none;
   box-shadow: none;
@@ -272,14 +299,18 @@ html {
   border-radius: 0;
   margin: 0;
 }
-#login-form h2, #register-form h2 {
+
+#login-form h2,
+#register-form h2 {
   display: none;
 }
+
 .form-tabs {
   display: flex;
   width: 100%;
   margin-bottom: 18px;
 }
+
 .form-tab {
   flex: 1;
   padding: 12px 0;
@@ -292,16 +323,19 @@ html {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
+
 .form-tab.active {
   background: #181f2a;
   color: #fff;
 }
+
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 input {
   width: 90%;
   max-width: 320px;
@@ -317,10 +351,12 @@ input {
   color: #181f2a;
   transition: border-color 0.2s;
 }
+
 input:focus {
   border-color: #8B5CF6;
   outline: none;
 }
+
 button[type="submit"] {
   width: 100%;
   padding: 14px 0;
@@ -333,27 +369,33 @@ button[type="submit"] {
   margin-top: 8px;
   transition: background 0.2s;
 }
+
 button[type="submit"]:hover {
   background: #8B5CF6;
 }
+
 #message {
   margin-top: 16px;
   text-align: center;
   color: #e53935;
   font-size: 1rem;
 }
+
 .container p {
   margin-top: 18px;
   font-size: 1rem;
 }
+
 .container a {
   color: #8B5CF6;
   text-decoration: none;
   font-weight: 500;
 }
+
 .container a:hover {
   text-decoration: underline;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -370,8 +412,13 @@ body {
 }
 
 @keyframes backgroundShift {
-  0% { background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%); }
-  100% { background: linear-gradient(135deg, #A855F7 0%, #8B5CF6 100%); }
+  0% {
+    background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  }
+
+  100% {
+    background: linear-gradient(135deg, #A855F7 0%, #8B5CF6 100%);
+  }
 }
 
 .light-lines {
@@ -398,7 +445,7 @@ body {
   padding: 30px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   animation: slideIn 0.8s ease-out;
   position: relative;
@@ -406,18 +453,33 @@ body {
 }
 
 @keyframes slideIn {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   color: black;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
@@ -472,7 +534,7 @@ button {
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
@@ -488,13 +550,21 @@ button:active {
   color: red;
 }
 
-#login-form, #register-form {
+#login-form,
+#register-form {
   animation: formSlide 0.5s ease-out;
 }
 
 @keyframes formSlide {
-  from { transform: translateX(-20px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 p {
@@ -541,17 +611,23 @@ li:hover {
   animation: fadeIn 1s ease-in 1s both;
 }
 
-.experience, .project, .education {
+.experience,
+.project,
+.education {
   margin-bottom: 15px;
   animation: fadeIn 1s ease-in 0.8s both;
 }
 
-.experience h3, .project h3, .education h3 {
+.experience h3,
+.project h3,
+.education h3 {
   margin: 0;
   color: #333;
 }
 
-.experience p, .project p, .education p {
+.experience p,
+.project p,
+.education p {
   margin: 5px 0;
   font-style: italic;
 }
@@ -602,13 +678,27 @@ section:last-of-type li:hover {
 
 /* Enhanced animations */
 @keyframes slideInLeft {
-  from { transform: translateX(-50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .experience {
@@ -629,6 +719,7 @@ section:last-of-type li:hover {
     margin: 20px;
     padding: 20px;
   }
+
   h1 {
     font-size: 1.5em;
   }
@@ -669,7 +760,7 @@ section:last-of-type li:hover {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   min-width: 200px;
   overflow: hidden;
 }
