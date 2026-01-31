@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .portfolio-card, .portfolio-card * {
   text-align: justify;
 }
@@ -110,6 +119,121 @@
 @media (max-width: 900px) {
   .portfolio-row {
     flex-direction: column;
+  }
+  
+  .portfolio-card {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Mobile-specific fixes for small screens */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .light-lines {
+    display: none; /* Hide decorative SVG on mobile to prevent overflow */
+  }
+  
+  .portfolio-hub-header {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 0 16px;
+  }
+  
+  .portfolio-hub-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .portfolio-main {
+    padding: 0 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .portfolio-card {
+    min-width: 0;
+    width: 100%;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  .portfolio-user {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .portfolio-user-info h1 {
+    font-size: 1.3rem;
+    word-wrap: break-word;
+  }
+  
+  .portfolio-avatar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .portfolio-about h2,
+  .portfolio-skills h2,
+  .portfolio-projects h2 {
+    font-size: 1.1rem;
+  }
+  
+  .portfolio-section-content p,
+  .portfolio-skills li,
+  .portfolio-projects li {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .container {
+    margin: 20px 10px;
+    padding: 20px 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .container h1 {
+    font-size: 1.6rem;
+  }
+  
+  input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .portfolio-hub-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .portfolio-user-info h1 {
+    font-size: 1.1rem;
+  }
+  
+  .portfolio-card {
+    padding: 16px 12px;
+  }
+  
+  .container {
+    margin: 10px 5px;
+    padding: 16px 12px;
   }
 }
 
@@ -235,6 +359,9 @@ body {
   justify-content: center;
   align-items: center;
   animation: backgroundShift 10s ease-in-out infinite alternate;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @keyframes backgroundShift {
@@ -252,6 +379,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .light-lines svg {
