@@ -157,16 +157,18 @@ html {
 .portfolio-section {
   margin: 24px 0;
   text-align: left;
-  background: #f8f9fa;
+  background: #fff;
   padding: 28px 32px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid rgba(139, 92, 246, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .portfolio-section:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(139, 92, 246, 0.3);
 }
 
 .portfolio-section h2 {
