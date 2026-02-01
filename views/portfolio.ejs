@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - <%= user.name %></title>
+  <title>Portfolio - Mohnish S Shetty</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -50,6 +50,7 @@
     </svg>
   </div>
   
+  <!-- Profile Avatar Dropdown (Top Right) -->
   <div class="portfolio-avatar profile-avatar" style="position: absolute; top: 20px; right: 20px; cursor: pointer;">
     <span><%= user.firstLetter %></span>
     <div class="profile-dropdown">
@@ -58,38 +59,203 @@
     </div>
   </div>
 
-  <div class="container portfolio-container">
-    <h1>Mohnish Shetty's Portfolio</h1>
-    <p style="color: #555; margin-bottom: 24px;">Welcome, <%= user.name %>!</p>
-    
-    <section class="portfolio-section">
-      <h2>About Me</h2>
-      <p><strong>Professional Overview:</strong> Computer Science Engineering student with a solid grasp of software development principles including coding, debugging, and version control. Skilled in writing clean, scalable code and understanding complete development life cycles. Gained hands-on experience with API integration, logic building, UI design, and problem-solving. Adaptable, detail-oriented, and eager to contribute to dynamic engineering teams.</p>
-      <p><strong>Contact:</strong> 7892016094 | mohnish.srshetty@gmail.com</p>
-      <p><strong>Links:</strong> <a href="https://github.com/mohnish-srshetty" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mohnish-s-shetty-38210025b/" target="_blank">LinkedIn</a> | <a href="https://devode.liveblog365.com" target="_blank">Portfolio Website</a></p>
+  <div class="portfolio-wrapper">
+    <!-- Header Section with Name and Contact -->
+    <div class="portfolio-header">
+      <h1 class="portfolio-name">MOHNISH S SHETTY</h1>
+      <p class="portfolio-title">UNDERGRADUATE STUDENT</p>
+      <div class="contact-info">
+        <span class="contact-item">
+          <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          7892016094
+        </span>
+        <span class="contact-item">
+          <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 6l-10 7L2 6" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          mohnish.srshetty@gmail.com
+        </span>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/mohnishsrshetty" target="_blank" class="contact-link">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mohnish-s-shetty-38210025b/" target="_blank" class="contact-link">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://devode.liveblog365.com" target="_blank" class="contact-link">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          Portfolio Website
+        </a>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="portfolio-card">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-content">
+        <p>Computer Science Engineering student with a solid grasp of software development principles including coding, debugging, and version control. Skilled in writing clean, scalable code and understanding complete development life cycles. Gained hands-on experience with API integration, logic building, UI design, and problem-solving. Adaptable, detail-oriented, and eager to contribute to dynamic engineering teams.</p>
+      </div>
     </section>
 
-    <section class="portfolio-section">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, Java, C++, C</li>
-        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Flask</li>
-        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-        <li><strong>Tools & Platforms:</strong> Google Colab, Gemini API, VS Code</li>
-        <li><strong>Soft Skills:</strong> Effective Communication, Research oriented, Team collaboration and co-ordination, Analytical Thinking, Quick learner and adaptable</li>
-      </ul>
+    <!-- Education Section -->
+    <section class="portfolio-card">
+      <h2 class="section-title">Education</h2>
+      <div class="section-content">
+        <div class="education-item">
+          <h3>B.Tech in Computer Science</h3>
+          <p class="institution">M.S Ramaiah University of Applied Sciences, Bangalore</p>
+          <p class="duration">2022 - 2026</p>
+          <p class="grade"><strong>CGPA:</strong> 8.43</p>
+        </div>
+        <div class="education-item">
+          <h3>12th in PCMC</h3>
+          <p class="institution">Viveka PU College, Udupi</p>
+          <p class="duration">2021 - 2022</p>
+          <p class="grade"><strong>Percentage:</strong> 97%</p>
+        </div>
+        <div class="education-item">
+          <h3>10th</h3>
+          <p class="institution">St. Anthony English Medium School, Udupi</p>
+          <p class="duration">2019 - 2020</p>
+          <p class="grade"><strong>Percentage:</strong> 92.8%</p>
+        </div>
+      </div>
     </section>
 
-    <section class="portfolio-section">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Library Management System:</strong> Built a full-stack web application with admin and student dashboards. Enabled real-time book tracking, penalty management, and user registration. (Python, Flask, MySQL, HTML, CSS, JavaScript)</li>
-        <li><strong>Attendance Management System:</strong> Developed a web-based interface for attendance and marks tracking. Integrated a calendar view and weekly timetable feature. (Python, MongoDB, MySQL, HTML/CSS)</li>
-        <li><strong>Portfolio Website:</strong> Designed a personal site to showcase projects and certifications. Implemented a dynamic UI with vibrant theming and responsive layout. (HTML, CSS, JavaScript)</li>
-        <li><strong>MedVision AI:</strong> Developed an end-to-end secured AI platform using FastAPI, React, PyTorch, JWT Authentication for multi-modal medical image analysis (X-ray, CT, MRI, Ultrasound). Implemented deep learning models and Generative AI (Llama 3.3) to generate structured diagnostic reports with clinical insights. (React, Python, CSS, JavaScript, API)</li>
-      </ul>
+    <!-- Experience Section -->
+    <section class="portfolio-card">
+      <h2 class="section-title">Experience</h2>
+      <div class="section-content">
+        <div class="experience-item">
+          <h3>CAIR, DRDO</h3>
+          <p class="role">Intern</p>
+          <p class="duration">Aug 2025 - Jan 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="portfolio-card">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-content">
+        <div class="project-item">
+          <h3>MedVision AI – Advanced Medical Diagnostic Assistant</h3>
+          <p class="project-type">Self-Project</p>
+          <p class="tech-stack"><strong>Technologies:</strong> React, Python, CSS, JavaScript, API</p>
+          <ul>
+            <li>Developed an end-to-end secured AI platform using FastAPI, React, PyTorch, JWT Authentication for multi-modal medical image analysis (X-ray, CT, MRI, Ultrasound)</li>
+            <li>Implemented deep learning models and Generative AI (Llama 3.3) to generate structured diagnostic reports with clinical insights</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3>Library Management System</h3>
+          <p class="project-type">Self-Project</p>
+          <p class="tech-stack"><strong>Technologies:</strong> Python, Flask, MySQL, HTML, CSS, JavaScript</p>
+          <ul>
+            <li>Built a full-stack web application with admin and student dashboards</li>
+            <li>Enabled real-time book tracking, penalty management, and user registration</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3>Attendance Management System</h3>
+          <p class="project-type">Self-Project</p>
+          <p class="tech-stack"><strong>Technologies:</strong> Python, MySQL, HTML, CSS</p>
+          <ul>
+            <li>Developed a web-based interface for attendance and marks tracking</li>
+            <li>Integrated a calendar view and weekly timetable feature</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3>Portfolio Website</h3>
+          <p class="project-type">Self-Project</p>
+          <p class="tech-stack"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <ul>
+            <li>Designed a personal site to showcase projects and certifications</li>
+            <li>Implemented a dynamic UI with vibrant theming and responsive layout</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="portfolio-card">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-content">
+        <div class="skills-category">
+          <h4>Programming Languages</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Web Technologies</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Flask</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Databases</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Tools & Platforms</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">Google Colab</span>
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Soft Skills</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">Effective Communication</span>
+            <span class="skill-tag">Research Oriented</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Analytical Thinking</span>
+            <span class="skill-tag">Quick Learner</span>
+            <span class="skill-tag">Adaptable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="portfolio-card">
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-content">
+        <ul class="certifications-list">
+          <li>🏆 Google Crash Course on Python</li>
+          <li>🏆 Infosys Start to Code with Python</li>
+          <li>🏆 AI for India 2.0</li>
+          <li>🏆 Ethical Hacking (CNSS)</li>
+          <li>🏆 AI Meets the Dark Web Workshop</li>
+          <li>🏆 Tata Cybersecurity Analyst Job Simulation</li>
+          <li>🏆 Google Cyber Security Certification</li>
+        </ul>
+      </div>
     </section>
   </div>
+
   <script src="js/portfolio.js"></script>
 </body>
 </html>
